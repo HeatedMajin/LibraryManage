@@ -1,0 +1,28 @@
+ *{padding:0px;margin:0px;}
+ a{text-decoration:none;}
+ body{font-family:"微软雅黑";font-size:14px;color:#666;}
+ .login{width:600px;height:300px;margin:110px auto 0px auto;color:#fff;background:rgba(0,0,0,0.5);transform-style:preserve-3D;-webkit-transform-style:preserve-3D;transform:rotateX(60deg)rotateZ(-50deg);-webkit-transform:rotateX(60deg)rotateZ(-50deg);transition:all 2s;-webkit-transition:all 2s;-moz-transition:all 2s;-o-transition:all 2s;position:relative;}
+ .login:hover{transform:rotateX(0deg) rotateZ(0deg);-webkit-transform:rotateX(0deg) rotateZ(0deg);}
+ .l_content{width:600px;height:300px;padding:15px 0;}
+ .l_content:before,.l_content:after{content:"";position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:rgba(0,0,0,0.6);}
+ .l_content:before{transform-origin:left center;-webkit-transform-origin:left center;-moz-transform-origin:left center;-o-transform-origin:left center;transform:rotateY(90deg);-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);width:25px;}
+ .l_content:after{top:auto;left:0px;transform-origin:bottom center;-webkit-transform-origin:bottom center;-moz-transform-origin:bottom center;-o-transform-origin:bottom center;transform:rotateX(90deg);-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);height:25px;}
+ .l_content h2{margin-left:242px;font-size:30px;font-weight:500;}
+ .l_content dl{height:50px;line-height:50px;margin:10px 0px;}
+ .l_content dl dt{width:180px;text-align:right;float:left;font-size:15px;color:#e1e1e1;}
+ .l_content dl dd{width:420px;float:right;font-size:16px;}
+ input{width:320px;height:37px;padding:5px;border:1px solid #fff;}
+ input[type="text"]{background:rgba(255,255,255,0.9);font-family:"微软雅黑";color:#333;}
+ input[type="submit"]{width:332px;height:44px;border:4px solid #fff;background:#51a8ff;color:#fff;font-size:18px;font-weight:700;padding:5px;transition:all 500ms;}
+ input[type="submit"]:hover{background:#9eceff;color:#222;cursor:pointer;}
+ input:focus{outline:4px solid #007fff;}
+ .l_content .l_info{width:300px;height:18px;margin-left:210px;}
+ .l_content .l_info a{text-decoration:none;float:right;padding-left:15px;color:#ccc;}
+ .l_content .l_info a:hover{color:#fff;text-decoration:underline;}
+ .indexmap{display:inline-block;font-size:12px;padding-left:10px;font-weight:400;}
+ .l_welcome{height:20px;color:#000;font-size:14px;text-align:center;margin-top:220px;}
+ .l_qqun{display:inline-block;vertical-align:middle}
+ .l_copy{width:100%;margin-top:10px;}
+ .l_copy .c_text{display:block;color:#000;line-height:50px;text-align:center;font-size:12px;}
+ .bg{min-width:100%;min-height:100%;background:#fcf;position:fixed;top:0;left:0;opacity:0.5;z-index:-20;}
+ video#bgvid{position:fixed;left:50%;top:-111px;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;min-width:100%;min-height:100%;background:url('../images/semalt.jpg') no-repeat;background-size:cover;width:auto;height:auto;z-index:-100;}

@@ -1,0 +1,147 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "Î¢ÈíÑÅºÚ";
+	font: 14px/50px "Î¢ÈíÑÅºÚ";
+	background: url("../images/bj.jpg") no-repeat top center;
+	background-attachment: fixed;
+	color: #fff;
+	perspective: 3000px;
+	-webkit-perspective: 3000px;
+	overflow: hidden;
+}
+
+.register {
+	width: 700px;
+	height: 460px;
+	background: rgba(190, 190, 190, 0.5);
+	margin: 30px auto;
+	transform-style: preserve-3D;
+	-webkit-transform-style: preserve-3D;
+	-webkit-transform: rotateX(50deg) rotateZ(-30deg);
+	-moz-transform: rotateX(50deg) rotateZ(-30deg);
+	-o-transform: rotateX(50deg) rotateZ(-30deg);
+	transition: all 2s;
+	-webkit-transition: all 2s;
+	position: relative;
+}
+
+.register:hover {
+	transform: rotateX(0deg) rotateZ(0deg);
+	-webkit-transform: rotateX(0deg) rotateZ(0deg);
+}
+
+.register .r_content {
+	width: 850px;
+	height: 550px;
+	padding: 15px 0;
+}
+
+.r_content:before, .r_content:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(250, 250, 250, 0.6)
+}
+
+.r_content:before {
+	transform-origin: left center;
+	-webkit-transform-origin: left center;
+	transform: rotateY(90deg);
+	-webkit-transform: rotateY(90deg);
+	width: 25px;
+}
+
+.r_content:after {
+	top: auto;
+	left: 0px;
+	transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
+	transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg);
+	height: 25px;
+}
+
+.register .r_content h1 {
+	margin-left: 215px;
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.register .r_content dl {
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0px;
+}
+
+.register .r_content dt {
+	width: 180px;
+	text-align: right;
+	float: left;
+}
+
+.register .r_content dd {
+	width: 320px;
+	float: left;
+}
+
+input {
+	border: 1px solid gray;
+	color: #fff;
+	background-color: #5F5F5F;
+	margin-left: 10px;
+	width: 300px;
+	height: 24px;
+	padding: 5px;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+
+.indexmap {
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 10px;
+	font-weight: 400;
+}
+
+.l_welcome {
+	height: 20px;
+	color: #ccc;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 220px;
+}
+
+.l_qqun {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.l_copy {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.l_copy .c_text {
+	display: block;
+	color: #ccc;
+	line-height: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+
+span {
+	clear: both;
+	margin-left: 10px;
+	color: #F0F0F0;
+	font-size: 8px;
+}

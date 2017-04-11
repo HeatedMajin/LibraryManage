@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/jsp/EditUserInfo.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/book/show_my_borrow_book.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/listBookLikeBaidu.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/manage/showchanges.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/showBookDetail.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/user/changePassword.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/user/login.jsp=UTF-8
+encoding//WebRoot/files/js/suggest.js=GBK
+encoding//WebRoot/index.jsp=UTF-8
+encoding//src/cn/majin/Web/filter/HtmlFilter.java=UTF-8
+encoding//src/dbcpconfig.properties=UTF-8
+encoding//src/readme.txt=UTF-8

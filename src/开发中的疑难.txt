@@ -1,0 +1,4 @@
+1.深入理解泛型	
+2.如何获取ResultSet中的数据量
+3.在BookDaoImpl.java中isEistID(String id)检查id是不是重复
+	使用字符串拼接是正确的，使用setString是错误的？？？
