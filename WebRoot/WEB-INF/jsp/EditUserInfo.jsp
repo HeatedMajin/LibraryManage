@@ -1,6 +1,7 @@
 <%@ page language="java" import="java.util.*" 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,7 +77,7 @@
 					<dt>更改您的生日：</dt>
 					<dd>
 						<input type="date" placeholder="请输入您的生日..." name="birthday"
-							value="${user.birthday}">
+							value="<fmt:formatDate value='${user.birthday}' pattern='yyyy-MM-dd'/>">
 					</dd>
 					<dd>
 						<span> ${errors.birthday}</span>

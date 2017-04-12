@@ -59,10 +59,12 @@ public class SearchBookServlet extends HttpServlet {
 	// 处理查询的请求
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String type = request.getParameter("type");
-		SearchConditionBean bean = null;
+		SearchConditionBean bean =  null;
 		// 使用过滤条件进行查询
 		// 把筛选填入的参数封装到bean中
+
 		bean = WebUtils.request2bean(request, SearchConditionBean.class);
+		
 		if ("language".equals(type)) {// 使用自然语言进行查询
 			// 把自然语言中的信息封装到bean中
 			bean = doLanguageSearch(request, response);
@@ -70,6 +72,8 @@ public class SearchBookServlet extends HttpServlet {
 			String name = request.getParameter("q"); 
 			bean.setName(name);
 		}
+		
+		request.setAttribute("condition", bean);
 		// 把传递来的页面信息封装到QueryInfo中
 		QueryInfo info = WebUtils.request2bean(request, QueryInfo.class);
 

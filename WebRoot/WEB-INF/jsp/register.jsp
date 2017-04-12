@@ -1,42 +1,45 @@
-<%@ page language="java" import="java.util.*" 	pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>免费注册</title>
-<link type="text/css" rel="stylesheet"	href="${pageContext.request.contextPath}/files/css/register.css">
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/files/css/register.css">
 <script type="text/javascript">
-	function generatePreference(){
-		var pres=document.getElementsByClassName("pres");
+	function generatePreference() {
+		var pres = document.getElementsByClassName("pres");
 		var preference = "";
-		for(var i = 0 ; i < pres.length;i++){
-			if(pres[i].checked){
-				preference=preference+pres[i].value +",";
+		for (var i = 0; i < pres.length; i++) {
+			if (pres[i].checked) {
+				preference = preference + pres[i].value + ",";
 			}
 		}
 		/*到最后会多出一个,来需要戒掉*/
-		preference = preference.substr(0, preference.length-1);
-		
+		preference = preference.substr(0, preference.length - 1);
+
 		//alert(preference);
-		
+
 		/*设置隐藏域确保preference回传递*/
 		var form = document.getElementById("form");
 		var hidden = document.createElement("input");
-		hidden.type="hidden";
-		hidden.name="preference";
-		hidden.value=preference;
+		hidden.type = "hidden";
+		hidden.name = "preference";
+		hidden.value = preference;
 		form.appendChild(hidden);
 	}
-</script>	
+</script>
 </head>
 <body>
 	<div class="register">
 		<div class="r_content">
 			<h1>用户免费注册</h1>
-			<form id="form" action="formcheck?type=register" method="post" onsubmit="generatePreference()">
+			<form id="form" action="formcheck?type=register" method="post"
+				onsubmit="generatePreference()">
 				<dl>
 					<dt>请输入您的账号：</dt>
 					<dd>
@@ -68,8 +71,10 @@
 				<dl>
 					<dt>请输入您的性别：</dt>
 					<dd>
-						<input type="radio" name="gender"value="male" ${form.gender=='male'?'checked':''}>男
-						<input type="radio" name="gender" value="female" ${form.gender=='female'?'checked':''}>女
+						<input type="radio" name="gender" value="male"
+							${form.gender=='male'?'checked':''}>男 <input type="radio"
+							name="gender" value="female"
+							${form.gender=='female'?'checked':''}>女
 					</dd>
 					<dd>
 						<span> ${errors.gender}</span>
@@ -79,11 +84,12 @@
 					<dt>请输入您的爱好：</dt>
 					<dd>
 						<c:forEach items="${preference}" var="pre">
-							<input type="checkbox" class="pres" value="${pre}" ${fn:contains(form.preference,pre)?'checked':''}>${pre}
+							<input type="checkbox" class="pres" value="${pre}"
+								${fn:contains(form.preference,pre)?'checked':''}>${pre}
 						</c:forEach>
 					</dd>
 				</dl>
-				
+
 				<dl>
 					<dt>请输入您的手机：</dt>
 					<dd>
@@ -98,7 +104,7 @@
 					<dt>请输入您的生日：</dt>
 					<dd>
 						<input type="date" placeholder="请输入您的生日..." name="birthday"
-							value="${form.birthday}">
+							value="<fmt:formatDate value='${form.birthday}' pattern='yyyy-MM-dd'/>">
 					</dd>
 					<dd>
 						<span> ${errors.birthday}</span>

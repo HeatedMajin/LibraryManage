@@ -168,12 +168,58 @@
   );
   
  向表中插入测试数据
- insert into book (id,name,author,publishdate,detail) values('1234567890','情人','杜拉斯',sysdate,'杜拉斯代表作之一，自传性质的小说，获一九八四年法国龚古尔文学奖。全书以法国殖民者在越南的生活为背景，描写贫穷的法国女孩与富有的中国少爷之间深沉而无望的爱情。');
- insert into book (id,name,author,publishdate,detail) values('2234567890','挪威的森林','村上春树',sysdate,'这是一部动人心弦的、平缓舒雅的、略带感伤的恋爱小说。小说主人公渡边以第一人称展开他同两个女孩间的爱情纠葛。');
- insert into book (id,name,author,publishdate,detail) values('3234567890','无人生还','阿婆',sysdate,'最后的结局出乎意外。可以颠覆你的思维。侦探小说。最后的结局出乎意外。可以颠覆你的思维。侦探小说最后的结局出乎意外。可以颠覆你的思维。侦探小说');
- insert into book (id,name,author,publishdate,detail) values('4234567890','白夜行','东野圭吾',sysdate,'我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借这份光，我便能把黑夜当成太阳。我从来就没有太阳，所以不怕失去。——白夜行 ');
- insert into book (id,name,author,publishdate,detail) values('1111111111','百年孤独','马尔克斯',sysdate,'魔幻现实主义 写了一个家族的百年兴衰。豆瓣评分9分以上。看了一个月，名字很长很复杂，我看这本书的时候是靠着感觉的，感觉上知道谁是谁，看此书需要耐心，平静下来。'); 	
- insert into book (id,name,author,publishdate,detail) values('1111111222','天才在左，疯子在右','高铭',sysdate,'本书以访谈录的形式记载了生活在另一个角落的人群（精神病患者、心理障碍者等边缘人）深刻、视角独特的所思所想，让人们可以了解到疯子抑或天才真正的内心世界。此书是国内第一本具有人文情怀的精神病患谈访录。');             	
+ insert into book (id,name,author,publishdate,detail) values('0000000001','情人','杜拉斯', to_date('2006-12-25','yyyy-mm-dd'),'杜拉斯代表作之一，自传性质的小说，获一九八四年法国龚古尔文学奖。全书以法国殖民者在越南的生活为背景，描写贫穷的法国女孩与富有的中国少爷之间深沉而无望的爱情。');
+ insert into book (id,name,author,publishdate,detail) values('0000000003','无人生还','阿婆',to_date('2005-10-02','yyyy-mm-dd'),'最后的结局出乎意外。可以颠覆你的思维。侦探小说。最后的结局出乎意外。可以颠覆你的思维。侦探小说最后的结局出乎意外。可以颠覆你的思维。侦探小说');
+ insert into book (id,name,author,publishdate,detail) values('0000000004','白夜行','东野圭吾',to_date('2000-07-11','yyyy-mm-dd'),'我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借这份光，我便能把黑夜当成太阳。我从来就没有太阳，所以不怕失去。——白夜行 ');
+ insert into book (id,name,author,publishdate,detail) values('0000000005','百年孤独','马尔克斯',to_date('2002-11-25','yyyy-mm-dd'),'魔幻现实主义 写了一个家族的百年兴衰。豆瓣评分9分以上。看了一个月，名字很长很复杂，我看这本书的时候是靠着感觉的，感觉上知道谁是谁，看此书需要耐心，平静下来。'); 	
+ insert into book (id,name,author,publishdate,detail) values('0000000006','天才在左，疯子在右','高铭',to_date('2003-03-05','yyyy-mm-dd'),'本书以访谈录的形式记载了生活在另一个角落的人群（精神病患者、心理障碍者等边缘人）深刻、视角独特的所思所想，让人们可以了解到疯子抑或天才真正的内心世界。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('0000000007','且听风吟','村上春树',to_date('1978-02-02','yyyy-mm-dd'),'1978年，29岁的村上和夫人阳子在东京经营着一家名叫“彼得猫”的咖啡屋。突然有一天，村上感到了莫名的躁动，一支笔让他得到了发泄，他的处女作《且听风吟》就这样诞生了。第二年6月，村上凭借它摘走了文学大奖群像新人奖-');
+ insert into book (id,name,author,publishdate,detail) values('0000000008','挪威的森林','村上春树',to_date('1988-03-07','yyyy-mm-dd'),'《挪威的森林》的经典化，让很多人误以为村上是一位言情小说家，但村上自己不这么认为，他给记者写的邮件中说，"我的作品自始至终都在追求更为综合的价值和印象，其中包含的要素非常多，表达方式也非常多样。我不愿意自己的作品被归类为某一狭窄的范畴."');
+ insert into book (id,name,author,publishdate,detail) values('0000000009','天黑以后','村上春树',to_date('1992-05-24','yyyy-mm-dd'),'《天黑之后》描写了一个叫白川的日本白领殴打因突然来月经而拒绝接客的中国小姐后，毫无一丝罪恶之感回到写字楼中继续加班。19岁的中国少女拨打求助电话，会讲中国话的日本人玛丽充当起了挽救受害中国少女的桥梁。');
+ insert into book (id,name,author,publishdate,detail) values('0000000010','舞·舞·舞','村上春树',to_date('1996-06-12','yyyy-mm-dd'),'在《舞·舞·舞》这样一部看似颓废的作品中，村上春树在悬念故事和露水爱情的结构之外，将人性恶的源头指向了所谓的“高度发达的资本主义社会”，作品中人物将“消费”看作“浪费”，玩世不恭的口吻中充满了对当今大行其道的消费主义的讽刺。');
+ insert into book (id,name,author,publishdate,detail) values('0000000011','世界尽头与冷酷仙境','村上春树',to_date('1990-01-21','yyyy-mm-dd'),'《世界尽头与冷酷仙境》中，村上春树同样表面在讲一个以忧郁的爱情为基调的故事，其中对于“人的异化”这个主题的触及却让人震撼。冷酷仙境中的居民生活幸福，却没有了“心”，也就没有了人存在的意义，这种内涵完全可以视为对卡夫卡小说某些方面的另类阐释。');
+ insert into book (id,name,author,publishdate,detail) values('0000000012','寻羊冒险记','村上春树',to_date('2000-01-02','yyyy-mm-dd'),'在《寻羊冒险记》中，村上春树将矛头直接指向了右翼团体，右翼团体的头目被视为邪恶的罪魁祸首，有着不可告人的阴谋。高度发达的资本主义社会则将普通人置于物质极大充足、心灵无处可逃的矛盾境地中。');
+ insert into book (id,name,author,publishdate,detail) values('0000000013','挪威的森林','村上春树',to_date('2005-01-02','yyyy-mm-dd'),'这是一部动人心弦的、平缓舒雅的、略带感伤的恋爱小说。小说主人公渡边以第一人称展开他同两个女孩间的爱情纠葛。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('0000000014','Java从入门到精通','国家863中部软件孵化器',to_date('2010-01-02','yyyy-mm-dd'),'(第一版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('0000000015','Java从入门到精通','国家863中部软件孵化器',to_date('2012-07-22','yyyy-mm-dd'),'(第二版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('0000000016','Java从入门到精通','国家863中部软件孵化器',to_date('2014-12-22','yyyy-mm-dd'),'(第三版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('0000000017','Java从入门到精通','国家863中部软件孵化器',to_date('2016-08-22','yyyy-mm-dd'),'(第四版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+              	
+ insert into book (id,name,author,publishdate,detail) values('0000000018','JavaWeb从入门到精通','常倬林',to_date('2012-08-22','yyyy-mm-dd'),'《JavaWeb从入门到精通》是2011年机械工业出版社出版的图书，作者是常倬林。全书配合大量的图例及代码说明，细致地讲解了Struts、Hibernate和Spring框架开发技术，是学习J2EE开发的不错的参考书。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('0000000019','JavaScript从入门到精通','刘智勇',to_date('2011-08-22','yyyy-mm-dd'),'第一篇为JavaScript语法基础；第二篇为JavaScript对象，主要包括对象、核心对象、数组、正则表达式、对象模型和事件驱动、窗口与框架、文档对象、表单对象等内容；第三篇为高级技术，主要包括BOM中的其他对象、文档对象模型以及Ajax技术等内容。');
+ 
+
+
+ insert into book (id,name,author,publishdate,detail) values('1000000001','情人','杜拉斯', to_date('2006-12-25','yyyy-mm-dd'),'杜拉斯代表作之一，自传性质的小说，获一九八四年法国龚古尔文学奖。全书以法国殖民者在越南的生活为背景，描写贫穷的法国女孩与富有的中国少爷之间深沉而无望的爱情。');
+ insert into book (id,name,author,publishdate,detail) values('1000000003','无人生还','阿婆',to_date('2005-10-02','yyyy-mm-dd'),'最后的结局出乎意外。可以颠覆你的思维。侦探小说。最后的结局出乎意外。可以颠覆你的思维。侦探小说最后的结局出乎意外。可以颠覆你的思维。侦探小说');
+ insert into book (id,name,author,publishdate,detail) values('1000000004','白夜行','东野圭吾',to_date('2000-07-11','yyyy-mm-dd'),'我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借这份光，我便能把黑夜当成太阳。我从来就没有太阳，所以不怕失去。——白夜行 ');
+ insert into book (id,name,author,publishdate,detail) values('1000000005','百年孤独','马尔克斯',to_date('2002-11-25','yyyy-mm-dd'),'魔幻现实主义 写了一个家族的百年兴衰。豆瓣评分9分以上。看了一个月，名字很长很复杂，我看这本书的时候是靠着感觉的，感觉上知道谁是谁，看此书需要耐心，平静下来。'); 	
+ insert into book (id,name,author,publishdate,detail) values('1000000006','天才在左，疯子在右','高铭',to_date('2003-03-05','yyyy-mm-dd'),'本书以访谈录的形式记载了生活在另一个角落的人群（精神病患者、心理障碍者等边缘人）深刻、视角独特的所思所想，让人们可以了解到疯子抑或天才真正的内心世界。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('1000000007','且听风吟','村上春树',to_date('1978-02-02','yyyy-mm-dd'),'1978年，29岁的村上和夫人阳子在东京经营着一家名叫“彼得猫”的咖啡屋。突然有一天，村上感到了莫名的躁动，一支笔让他得到了发泄，他的处女作《且听风吟》就这样诞生了。第二年6月，村上凭借它摘走了文学大奖群像新人奖-');
+ insert into book (id,name,author,publishdate,detail) values('1000000008','挪威的森林','村上春树',to_date('1988-03-07','yyyy-mm-dd'),'《挪威的森林》的经典化，让很多人误以为村上是一位言情小说家，但村上自己不这么认为，他给记者写的邮件中说，"我的作品自始至终都在追求更为综合的价值和印象，其中包含的要素非常多，表达方式也非常多样。我不愿意自己的作品被归类为某一狭窄的范畴."');
+ insert into book (id,name,author,publishdate,detail) values('1000000009','天黑以后','村上春树',to_date('1992-05-24','yyyy-mm-dd'),'《天黑之后》描写了一个叫白川的日本白领殴打因突然来月经而拒绝接客的中国小姐后，毫无一丝罪恶之感回到写字楼中继续加班。19岁的中国少女拨打求助电话，会讲中国话的日本人玛丽充当起了挽救受害中国少女的桥梁。');
+ insert into book (id,name,author,publishdate,detail) values('1000000010','舞·舞·舞','村上春树',to_date('1996-06-12','yyyy-mm-dd'),'在《舞·舞·舞》这样一部看似颓废的作品中，村上春树在悬念故事和露水爱情的结构之外，将人性恶的源头指向了所谓的“高度发达的资本主义社会”，作品中人物将“消费”看作“浪费”，玩世不恭的口吻中充满了对当今大行其道的消费主义的讽刺。');
+ insert into book (id,name,author,publishdate,detail) values('1000000011','世界尽头与冷酷仙境','村上春树',to_date('1990-01-21','yyyy-mm-dd'),'《世界尽头与冷酷仙境》中，村上春树同样表面在讲一个以忧郁的爱情为基调的故事，其中对于“人的异化”这个主题的触及却让人震撼。冷酷仙境中的居民生活幸福，却没有了“心”，也就没有了人存在的意义，这种内涵完全可以视为对卡夫卡小说某些方面的另类阐释。');
+ insert into book (id,name,author,publishdate,detail) values('1000000012','寻羊冒险记','村上春树',to_date('2000-01-02','yyyy-mm-dd'),'在《寻羊冒险记》中，村上春树将矛头直接指向了右翼团体，右翼团体的头目被视为邪恶的罪魁祸首，有着不可告人的阴谋。高度发达的资本主义社会则将普通人置于物质极大充足、心灵无处可逃的矛盾境地中。');
+ insert into book (id,name,author,publishdate,detail) values('1000000013','挪威的森林','村上春树',to_date('2005-01-02','yyyy-mm-dd'),'这是一部动人心弦的、平缓舒雅的、略带感伤的恋爱小说。小说主人公渡边以第一人称展开他同两个女孩间的爱情纠葛。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('1000000014','Java从入门到精通','国家863中部软件孵化器',to_date('2010-01-02','yyyy-mm-dd'),'(第一版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('1000000015','Java从入门到精通','国家863中部软件孵化器',to_date('2012-07-22','yyyy-mm-dd'),'(第二版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('1000000016','Java从入门到精通','国家863中部软件孵化器',to_date('2014-12-22','yyyy-mm-dd'),'(第三版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+ insert into book (id,name,author,publishdate,detail) values('1000000017','Java从入门到精通','国家863中部软件孵化器',to_date('2016-08-22','yyyy-mm-dd'),'(第四版)。以零基础讲解为宗旨，深入浅出地讲解Java的各项技术及实战技能。本书从初学者角度出发，通过通俗易懂的语言、丰富多彩的实例，详细介绍了使用Java语言进行程序开发应该掌握的各方面技术。');
+              	
+ insert into book (id,name,author,publishdate,detail) values('1000000018','JavaWeb从入门到精通','常倬林',to_date('2012-08-22','yyyy-mm-dd'),'《JavaWeb从入门到精通》是2011年机械工业出版社出版的图书，作者是常倬林。全书配合大量的图例及代码说明，细致地讲解了Struts、Hibernate和Spring框架开发技术，是学习J2EE开发的不错的参考书。');
+ 
+ insert into book (id,name,author,publishdate,detail) values('1000000019','JavaScript从入门到精通','刘智勇',to_date('2011-08-22','yyyy-mm-dd'),'第一篇为JavaScript语法基础；第二篇为JavaScript对象，主要包括对象、核心对象、数组、正则表达式、对象模型和事件驱动、窗口与框架、文档对象、表单对象等内容；第三篇为高级技术，主要包括BOM中的其他对象、文档对象模型以及Ajax技术等内容。');
+ 
+
+
+
+              	
 15.对book进行操作的Dao层
 
 	BookDaoImpl
@@ -420,10 +466,19 @@ V5.4 提供借书功能
 	借阅统计--->触发器（每次借书，修改记录表中数据）
 	//创建记录表，记录每本书被借阅的次数
 	create table borrowPerBook(
-		book_id varchar(10) primary key,
+		book_id varchar(30) primary key,
 		borrow_count int default(0),
 		constraint borrowTrail_FK_book_id foreign key(book_id) references book(id)
 	)
+//插入伪造数据
+insert into borrowPerBook values('0000000001',20);
+insert into borrowPerBook values('0000000003',27);
+insert into borrowPerBook values('0000000004',10);
+insert into borrowPerBook values('0000000005',72);
+insert into borrowPerBook values('0000000006',38);
+insert into borrowPerBook values('0000000007',9);
+insert into borrowPerBook values('0000000008',51);
+insert into borrowPerBook values('0000000009',44);
 
 	//创建触发器,当有进行借书时，向borrowTrail中进行登记，记录每本书被解约的次数
 		create or replace trigger tri_dml_op_borrowPerBook

@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" 	pageEncoding="UTF-8"%>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,7 +41,7 @@
 				<dl>
 					<dt>您的生日：</dt>
 					<dd>
-						<input type="text"value="${user.birthday}" readonly="readonly">
+						<input type="text"	value="<fmt:formatDate value='${user.birthday}' pattern='yyyy-MM-dd'/>" readonly="readonly">
 					</dd>
 				</dl>
 				<dl>

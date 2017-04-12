@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import cn.majin.domain.User;
 import cn.majin.service.UserService;
 import cn.majin.serviceImpl.UserServiceImpl;
-import oracle.net.aso.h;
 
 //修改用户的密码
 public class ChangPasswordServlet extends HttpServlet {
@@ -74,13 +73,11 @@ public class ChangPasswordServlet extends HttpServlet {
 
 			request.setAttribute("notice", "修改密码成功~");
 			request.getRequestDispatcher("/WEB-INF/jsp/notice.jsp").forward(request, response);
-			;
 			return;
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("notice", "修改密码失败~");
 			request.getRequestDispatcher("/WEB-INF/jsp/notice.jsp").forward(request, response);
-			;
 		}
 	}
 
